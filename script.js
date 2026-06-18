@@ -16,9 +16,15 @@ const projects = [
 
 // --- ADMIN ---
 
-document.getElementById("admin-btn").onclick = () => {
-  document.getElementById("login-modal").classList.remove("hidden");
-};
+document.addEventListener("DOMContentLoaded", () => {
+  const adminBtn = document.getElementById("admin-btn");
+
+  if (!adminBtn) return;
+
+  adminBtn.addEventListener("click", () => {
+    document.getElementById("admin-panel").classList.remove("hidden");
+  });
+});
 
 function loginAdmin() {
   const pwd = document.getElementById("admin-password").value;
