@@ -1,12 +1,12 @@
 :root {
  
---bg: #03045e;
+  --bg: #03045e;
   --panel: #023e8a;
   --border: #48cae4;
   --text: #e0fbfc;
   --muted: #90dbf4;
   --accent: #00b4d8;
- --radius: 18px;
+  --radius: 18px;
 }
 
 * { box-sizing: border-box; }
