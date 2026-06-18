@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<body>
+
+<header class="topbar">
+  <h1>Connect : projets</h1>
+  <button id="admin-btn">Admin</button>
+  <div id="login-modal" class="modal hidden"></div>
+</header>
+
+<div class="layout">
+
+  <!-- SIDEBAR GAUCHE : LISTE DES PROJETS -->
+  <aside class="sidebar left">
+    <h2>Projets</h2>
+    <ul id="project-list"></ul>
+  </aside>
+
+  <!-- ZONE CENTRALE : AFFICHAGE -->
+  <main class="content">
+    <div id="empty-state">Sélectionne un projet</div>
+    <iframe id="project-frame"></iframe>
+  </main>
+
+  <!-- SIDEBAR DROITE : AJOUT PROJET (ADMIN) -->
+  <aside class="sidebar right hidden" id="admin-panel">
+    <h2>Ajouter un projet</h2>
+
+    <label>
+      Nom du projet
+      <input id="proj-name">
+    </label>
+
+    <label>
+      Description
+      <textarea id="proj-desc"></textarea>
+    </label>
+
+    <label>
+      Lien GitHub / GitHub Pages
+      <input id="proj-link">
+    </label>
+
+    <button onclick="addProject()">Ajouter</button>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</body>
+</html>
